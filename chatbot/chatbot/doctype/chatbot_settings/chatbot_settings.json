@@ -1,0 +1,60 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2024-12-18 13:46:19.744019",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "api_key",
+  "generative_model",
+  "embedding_model"
+ ],
+ "fields": [
+  {
+   "fieldname": "api_key",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "API Key",
+   "reqd": 1
+  },
+  {
+   "default": "gemini-2.0-flash-exp",
+   "fieldname": "generative_model",
+   "fieldtype": "Select",
+   "in_list_view": 1,
+   "label": "Generative model",
+   "options": "gemini-2.0-flash-exp\ngemini-1.5-flash",
+   "reqd": 1
+  },
+  {
+   "fieldname": "embedding_model",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Embedding model",
+   "reqd": 1
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "issingle": 1,
+ "links": [],
+ "modified": "2024-12-18 14:17:59.236993",
+ "modified_by": "Administrator",
+ "module": "Chatbot",
+ "name": "Chatbot Settings",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "print": 1,
+   "read": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}
