@@ -4,6 +4,7 @@ app_publisher = "rijosh"
 app_description = "AI chat on your file"
 app_email = "rijosh.dev@gmail.com"
 app_license = "mit"
+app_logo_url = "/assets/chatbot/images/logo.png"
 
 # Apps
 # ------------------
@@ -11,15 +12,16 @@ app_license = "mit"
 # required_apps = []
 
 # Each item in the list will be shown as an app in the apps page
-# add_to_apps_screen = [
-# 	{
-# 		"name": "chatbot",
-# 		"logo": "/assets/chatbot/logo.png",
-# 		"title": "Chatbot",
-# 		"route": "/chatbot",
-# 		"has_permission": "chatbot.api.permission.has_app_permission"
-# 	}
-# ]
+add_to_apps_screen = [
+	{
+		"name": "chatbot",
+		"logo": "/assets/chatbot/images/logo.png",
+		"title": "Chatbot",
+		"route": "/chat",
+		"has_permission": "chatbot.check_app_permission"
+	}
+]
+
 
 # Includes in <head>
 # ------------------
@@ -57,7 +59,7 @@ app_license = "mit"
 # ----------
 
 # application home page (will override Website Settings)
-# home_page = "login"
+home_page = "apps"
 
 # website user home page (by Role)
 # role_home_page = {
